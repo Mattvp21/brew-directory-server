@@ -56,6 +56,6 @@ axios.request(options).then(function (response) {
 })
 
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT|| PORT, () => {
     console.log('Server started at port 5000')
 })
