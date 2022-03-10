@@ -23,7 +23,7 @@ app.get('/beers', (req, res) => {
       url: 'https://brianiswu-open-brewery-db-v1.p.rapidapi.com/breweries',
       headers: {
         'x-rapidapi-host': 'brianiswu-open-brewery-db-v1.p.rapidapi.com',
-        'x-rapidapi-key': '68e0aa975amsh431b4220c165f8dp16d3f3jsn1ef4a2323608'
+        'x-rapidapi-key': process.env.API_KEY
       }
     };
     
@@ -44,7 +44,7 @@ var options = {
   url: `https://brianiswu-open-brewery-db-v1.p.rapidapi.com/breweries/${id}`,
   headers: {
     'x-rapidapi-host': 'brianiswu-open-brewery-db-v1.p.rapidapi.com',
-    'x-rapidapi-key': '68e0aa975amsh431b4220c165f8dp16d3f3jsn1ef4a2323608'
+    'x-rapidapi-key': process.env.API_KEY
   }
 };
 
